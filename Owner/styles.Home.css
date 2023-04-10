@@ -1,0 +1,231 @@
+* {box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: lightblue;
+}
+nav{
+    background: rgb(247, 243, 5);
+    height: 100px;
+    width: 100%;
+}
+.logo{
+    width: 220px;
+    height: 150px;
+    margin-left: 150px;
+    box-shadow: 0 0 10px 2px black;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: rgba(190, 187, 0, 0.993);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display:none;
+}
+@media(max-width: 952px){
+    label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: rgb(247, 243, 5);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.hero {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .cta:hover {
+    background-color: #444;
+  }
+  
+  /* Style accommodation options section */
+  .accommodation-options {
+    padding: 50px;
+  }
+  .accommodation-options h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .accommodation-options ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .accommodation-options li {
+    width: 30%;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .accommodation-options img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .accommodation-options h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .accommodation-options p {
+    font-size: 16px;
+  }
+  
+  /* Style amenities section */
+  .amenities {
+    background-color: #f7f7f7;
+    padding: 50px;
+  }
+  .amenities h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .amenities ul {
+    list-style-type: disc;
+    padding-left: 30px;
+  }
+  .amenities li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Style location section */
+  .location {
+    padding: 50px;
+  }
+  .location h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .location p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .location img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Style contact section */
+  .contact {
+    background-color: #f7f7f7;
+    padding: 50px;
+  }
+  .contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .contact form input,
+  .contact form textarea {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  .contact form textarea {
+      height: 150px;
+  }
+  .contact form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .contact form button:hover {
+      background-color: #444;
+  }
